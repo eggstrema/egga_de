@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>10.000 Lights</title>
+        <title>100.000 Lights</title>
         
         <!-- Bootstrap -->
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -19,79 +19,71 @@
         <![endif]-->
         
         <style>
-            body { padding-top: 70px; }    
-            
+            body { padding-top: 70px; }
+            #map_canvas { padding:0px; }
         </style>
     </head>
     <body>
 
       <div class="container">
         <div class="row">
-            <div class="jumbotron alert-warning col-sm-6 col-sm-offset-3">
-                <h1><i class="fa fa-arrow-circle-up"></i> Level Up!</h1>
-                <p>10.000 Years should be celebrated with 10.000 Lights</p>
-                <p>Well, yeah, of course, it's 32 in decimal. Let's just get the Geeks some Arcade Action. Quick'n'Nerdy, y'know.</p>
-            </div>
-            
-            <div class=" col-sm-6 col-sm-offset-3">
-              <div class="panel panel-primary">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa fa-plane fa-2x"></i> Helicopters?</h3>
-                </div>
-                <div class="panel-body">
-                   Yes! After some drinks at Galander I would enjoy to have a short stroll over to Viktoriapark. If everything goes well (weather conditions ok, not too drunk) we can climb the "mountain" and start some aircrafts. Also: we will be glowing in the dark.
-                </div>
+          <div class="jumbotron alert-warning col-sm-6 col-sm-offset-3">
+              <h1><i class="fa fa-arrow-circle-up"></i> Level Up!</h1>
+              <p>100.000 Years should be celebrated with 100.000 Lights! I will try to count before the event. Spoiler: It's definitely more than that.</p>
+          </div>
+          
+          <div class=" col-sm-6 col-sm-offset-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-plane fa-2x fa-spin"></i> Helicopters?</h3>
               </div>
-            </div>
-            
-            <div class="col-sm-6 col-sm-offset-3">
-              <div class="panel panel-success">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa fa-empire fa-2x"></i> Be Geek!</h3>
-                </div>
-                <div class="panel-body">
-                  
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-sm-6 col-sm-offset-3">
-              <div class="panel panel-info">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa fa-map-marker fa-2x"></i> Location Shmocation</h3>
-                </div>
-                <div class="panel-body" id="map_canvas">
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-sm-6 col-sm-offset-3">
-              <div class="panel panel-danger">
-                <div class="panel-heading">
-                  <h3 class="panel-title"><i class="fa fa-clock-o fa-2x"></i> Panel warning</h3>
-                </div>
-                <div class="panel-body">
-                  Galander<br />
-                  Großbeerenstr. 54<br />
-                  10965 Berlin - Kreuzberg<br />
-                  <a href="http://bar.galander-berlin.de/ambiente">Website</a>
-                </div>
+              <div class="panel-body">
+                 Yes! After a few fist-class cocktails at Galander I would like to have a short stroll over to Viktoriapark. If everything goes well (weather conditions ok, not too drunk) we can climb the "mountain" and start some aircrafts. Also: we might be glowing in the dark.
               </div>
             </div>
           </div>
+          
+          <div class="col-sm-6 col-sm-offset-3">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-clock-o fa-2x fa-spin"></i> Timey Wimey</h3>
+              </div>
+              <div class="panel-body">
+                Friday, July 18th - 20:00 CEST<br />
+                <br />
+                Galander<br />
+                Großbeerenstr. 54<br />
+                10965 Berlin - Kreuzberg<br />
+                <br />
+                <a href="http://bar.galander-berlin.de/ambiente">Website</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-sm-offset-3">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-map-marker fa-2x"></i> Location Shmocation</h3>
+              </div>
+              <div class="panel-body" id="map_canvas">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1214.651062428206!2d13.383025809970215!3d52.491770415869226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0aac402afa61807!2sGALANDER+Kreuzberg!5e0!3m2!1sde!2sde!4v1405031089810" width="100%" frameborder="0" style="border:0"></iframe>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-sm-6 col-sm-offset-3">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-empire fa-2x"></i> May the Force be with You</h3>
+              </div>
+              <div class="panel-body">
+                 Brace yourselves. Five card stud, nothing wild. And the sky’s the limit
+              </div>
+            </div>
+          </div>
+          
         </div>
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var map_canvas = document.getElementById('map_canvas');
-        var map_options = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(map_canvas, map_options)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+      </div>
+
     </body>
 </html>
