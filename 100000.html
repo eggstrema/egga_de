@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>10.000 Lights</title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cyborg/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <style>
+            body { padding-top: 70px; }    
+            
+        </style>
+    </head>
+    <body>
+
+      <div class="container">
+        <div class="row">
+            <div class="jumbotron alert-warning col-sm-6 col-sm-offset-3">
+                <h1><i class="fa fa-arrow-circle-up"></i> Level Up!</h1>
+                <p>10.000 Years should be celebrated with 10.000 Lights</p>
+                <p>Well, yeah, of course, it's 32 in decimal. Let's just get the Geeks some Arcade Action. Quick'n'Nerdy, y'know.</p>
+            </div>
+            
+            <div class=" col-sm-6 col-sm-offset-3">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-plane fa-2x"></i> Helicopters?</h3>
+                </div>
+                <div class="panel-body">
+                   Yes! After some drinks at Galander I would enjoy to have a short stroll over to Viktoriapark. If everything goes well (weather conditions ok, not too drunk) we can climb the "mountain" and start some aircrafts. Also: we will be glowing in the dark.
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-empire fa-2x"></i> Be Geek!</h3>
+                </div>
+                <div class="panel-body">
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-map-marker fa-2x"></i> Location Shmocation</h3>
+                </div>
+                <div class="panel-body" id="map_canvas">
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-sm-offset-3">
+              <div class="panel panel-danger">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><i class="fa fa-clock-o fa-2x"></i> Panel warning</h3>
+                </div>
+                <div class="panel-body">
+                  Galander<br />
+                  Großbeerenstr. 54<br />
+                  10965 Berlin - Kreuzberg<br />
+                  <a href="http://bar.galander-berlin.de/ambiente">Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    </body>
+</html>
