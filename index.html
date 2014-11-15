@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="initExample">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
         
         <!-- Bootstrap -->
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.1.5/css/material.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,148 +19,73 @@
         <![endif]-->
         
         <style>
-            body { padding-top: 70px; }    
+            body { padding-top: 70px; }
+            .fa {  margin-left: 2.5em; }
+            .row-content {  padding-left: 4em; }
         </style>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-sanitize.js"></script>
+
+
         
     </head>
     <body>
     
-        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-material-cyan navbar-fixed-top" role="navigation">
             <div class="navbar-header">
                 <a class="navbar-brand" ng-click="page = 'index'" style="background: url(img/logo.png) no-repeat; background-position:5px 5px; padding-left: 60px;">Egga</a>
             </div>
         </nav>
         
-        
-        <div class="jumbotron">
-            <h1>Passionate Software Craftsman</h1>
-            <p>I am very passionate about code quality, tirelessly improve my skills and care about delivering high-grade results. I have written software in over a dozen languages for dozens of platforms. From GUI driven apps over web sites and command line applications to highly available services running on hundreds of servers.</p>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                
+                <div class="jumbotron">
+                    <h1>Passionate Software Craftsman</h1>
+                    <p>I am very passionate about code quality, tirelessly improve my skills and care about delivering high-grade results. I have written software in over a dozen languages for dozens of platforms. From GUI driven apps over web sites and command line applications to highly available services running on hundreds of servers.</p>
+                </div>
+                
+                <h2>Contact</h2>
+                <div class="list-group" ng-controller="ExampleController">
+                    
+                     <script>
+                        angular.module('initExample', ['ngSanitize'])
+                          .controller('ExampleController', ['$scope', function($scope) {
+                            $scope.sites = [
+                              { name:'Mail', icon:'fa-envelope', content:'<a href="mailto:mail@egga.de">mail@egga.de</a>' },
+                              { name:'Phone', icon:'fa-phone', content:'+49 163 234 23 05' },
+                              { name:'Google+', icon:'fa-google-plus', content:'<a href="https://plus.google.com/+JanHartung" target="_blank">+JanHartung</a> Best option to contact me: Start a Hangout.' },
+                              { name:'Threema', icon:'fa-lock', content:'<a href="https://threema.ch/en" target="_blank">KNFPDCEN</a>' },
+                              { name:'Telegram', icon:'fa-paper-plane', content:'<a href="https://telegram.org/" target="_blank">Egga</a>' },
+                              { name:'Twitter', icon:'fa-twitter', content:'<a href="https://twitter.com/egga_de" target="_blank">@egga_de</a>' },
+                              { name:'Skype', icon:'fa-skype', content:'<a href="skype:egga_de?userinfo" target="_blank">egga_de</a> Please contact me in advance, so I can turn it on' },
+                              { name:'LinkedIn', icon:'fa-linkedin', content:'<a href="https://www.linkedin.com/in/janhartung" target="_blank">Jan Hartung</a>' },
+                              { name:'Xing', icon:'fa-xing', content:'<a href="https://www.xing.com/profile/Jan_Hartung9" target="_blank">Jan Hartung</a>' },
+                              { name:'Github', icon:'fa-github', content:'<a href="https://github.com/Egga" target="_blank">Egga</a>' },
+                              { name:'Bitbucket', icon:'fa-bitbucket', content:'<a href="https://bitbucket.org/Egga" target="_blank">Egga</a>' },
+                              { name:'Trello', icon:'fa-trello', content:'<a href="https://trello.com/egga" target="_blank">egga</a>' },
+                              { name:'Meetup', icon:'fa-users', content:'<a href="http://www.meetup.com/members/82301962/" target="_blank">Jan Hartung</a>' },
+                              { name:'Lanyrd', icon:'fa-suitcase', content:'<a href="http://lanyrd.com/profile/jan-hartung/" target="_blank">Jan Hartung</a>' },
+                              { name:'Confide', icon:'fa-shield', content:'<a href="https://getconfide.com/" target="_blank">Jan Hartung</a>' },
+                              { name:'Yo', icon:'fa-hand-o-right', content:'<a href="http://www.justyo.co/" target="_blank">EGGA</a>' },
+                            ];
+                          }]);
+                    </script>
+                
+                    <div class="list-group-item well" ng-repeat="site in sites">
+                        <div class="row-action-primary">
+                            <i class="icon fa {{ site.icon }} fa-li"></i>
+                        </div>
+                        <div class="row-content">
+                            <h4 class="list-group-item-heading">{{ site.name }}</h4>
+                            <p class="list-group-item-text" ng-bind-html="site.content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <blockquote class="blockquote-reverse">
-            <p>One needs talent plus education to deliver great performance.</p>
-            <footer>Mantra</footer>
-        </blockquote>
-        
-        <h2>Contact</h2>
-        <ul class="list-group fa-ul" style="padding: 1em;">
-            <li class="list-group-item">
-                <i class="fa fa-envelope fa-li"></i>
-                <h4 class="list-group-item-heading">Mail</h4>
-                <a href="mailto:mail@egga.de">mail@egga.de</a>
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-phone fa-li"></i>
-                <h4 class="list-group-item-heading">Phone</h4>
-                +49 163 234 23 05
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-google-plus fa-li"></i>
-                <h4 class="list-group-item-heading">Google+</h4>
-                <a href="https://plus.google.com/+JanHartung" target="_blank">
-                    +JanHartung
-                </a><br/>
-                Best option to contact me: Start a Hangout.
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-lock fa-li"></i>
-                <h4 class="list-group-item-heading">Threema</h4>
-                <a href="https://threema.ch/en" target="_blank">
-                    KNFPDCEN
-                </a>
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-paper-plane fa-li"></i>
-                <h4 class="list-group-item-heading">Telegram</h4>
-                <a href="https://telegram.org/" target="_blank">
-                    Egga
-                </a>
-            </li>
-            
-            <li class="list-group-item">
-                <i class="fa fa-twitter fa-li"></i>
-                <h4 class="list-group-item-heading">Twitter</h4>
-                <a href="https://twitter.com/egga_de" target="_blank">
-                    @egga_de
-                </a>
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-skype fa-li"></i>
-                <h4 class="list-group-item-heading">Skype</h4>
-                <a href="skype:egga_de?userinfo" target="_blank">
-                    egga_de
-                </a><br/>
-                Please contact me in advance, so I can turn it on
-                </a>
-            </li>
-            
-            
-            <li class="list-group-item">
-                <i class="fa fa-linkedin fa-li"></i>
-                <h4 class="list-group-item-heading">LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/janhartung" target="_blank">
-                    Jan Hartung
-                </a>
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-xing fa-li"></i>
-                <h4 class="list-group-item-heading">Xing</h4>
-                <a href="https://www.xing.com/profile/Jan_Hartung9" target="_blank">
-                    Jan Hartung
-                </a>
-            </li>
-            
-            <li class="list-group-item">
-                <i class="fa fa-github fa-li"></i>
-                <h4 class="list-group-item-heading">Github</h4>
-                <a href="https://github.com/Egga" target="_blank">
-                    Egga
-                </a>
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-bitbucket fa-li"></i>
-                <h4 class="list-group-item-heading">Bitbucket</h4>
-                <a href="https://bitbucket.org/Egga" target="_blank">
-                    Egga
-                </a>
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-trello fa-li"></i>
-                <h4 class="list-group-item-heading">Trello</h4>
-                <a href="https://trello.com/egga" target="_blank">
-                    egga
-                </a>
-            </li>
-            
-            <li class="list-group-item">
-                <i class="fa fa-users fa-li"></i>
-                <h4 class="list-group-item-heading">Meetup</h4>
-                <a href="http://www.meetup.com/members/82301962/" target="_blank">
-                    Jan Hartung
-                </a>
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-suitcase fa-li"></i>
-                <h4 class="list-group-item-heading">Lanyrd</h4>
-                <a href="http://lanyrd.com/profile/jan-hartung/" target="_blank">
-                    Jan Hartung
-                </a>
-            </li>
-            
-            <li class="list-group-item">
-                <i class="fa fa-shield fa-li"></i>
-                <h4 class="list-group-item-heading">Confide</h4>
-                <a href="https://getconfide.com/" target="_blank">
-                    Jan Hartung
-                </a>
-            </li>
-            <li class="list-group-item">
-                <i class="fa fa-hand-o-right fa-li"></i>
-                <h4 class="list-group-item-heading">Yo</h4>
-                <a href="http://www.justyo.co/" target="_blank">
-                    EGGA
-                </a>
-            </li>
-        </ul>
+    
+
     </body>
 </html>
