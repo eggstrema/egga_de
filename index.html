@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="initExample">
+<html lang="en" ng-app="eggApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>egga.de</title>
         
-        <!-- Bootstrap -->
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.1.5/css/material.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
@@ -19,19 +18,56 @@
         <![endif]-->
         
         <style>
-            body { padding-top: 70px; }
+            body { padding: 0.5em; padding-top: 70px; margin-right:1.5em; }
             .fa {  margin-left: 2.5em; }
             .row-content {  padding-left: 4em; }
+            .well { margin: 1em; }
+            .label-inverse { background-color: #ffffff; margin: 0.5em; }
+            .label-inverse a { color: #00ccff; }
+            #footer { padding: 1em; }
+            
         </style>
         
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-sanitize.js"></script>
-
-
         
     </head>
     <body>
-    
+        
+         <script>
+            angular.module('eggApp', ['ngSanitize'])
+                .controller('ExampleController', ['$scope', function($scope) {
+                    $scope.sites = [
+                        { name:'Mail', icon:'fa-envelope', content:'<a href="mailto:mail@egga.de">mail@egga.de</a>' },
+                        { name:'Phone', icon:'fa-phone', content:'+49 163 234 23 05' },
+                        { name:'Google+', icon:'fa-google-plus', content:'<a href="https://plus.google.com/+JanHartung" target="_blank">+JanHartung</a>' },
+                        { name:'Threema', icon:'fa-lock', content:'<a href="https://threema.ch/en" target="_blank">KNFPDCEN</a>' },
+                        { name:'Telegram', icon:'fa-paper-plane', content:'<a href="https://telegram.org/" target="_blank">Egga</a>' },
+                        { name:'Twitter', icon:'fa-twitter', content:'<a href="https://twitter.com/egga_de" target="_blank">@egga_de</a>' },
+                        { name:'Skype', icon:'fa-skype', content:'<a href="skype:egga_de?userinfo" target="_blank">egga_de</a>' },
+                        { name:'LinkedIn', icon:'fa-linkedin', content:'<a href="https://www.linkedin.com/in/janhartung" target="_blank">Jan Hartung</a>' },
+                        { name:'Xing', icon:'fa-xing', content:'<a href="https://www.xing.com/profile/Jan_Hartung9" target="_blank">Jan Hartung</a>' },
+                        { name:'Github', icon:'fa-github', content:'<a href="https://github.com/Egga" target="_blank">Egga</a>' },
+                        { name:'Bitbucket', icon:'fa-bitbucket', content:'<a href="https://bitbucket.org/Egga" target="_blank">Egga</a>' },
+                        { name:'Trello', icon:'fa-trello', content:'<a href="https://trello.com/egga" target="_blank">egga</a>' },
+                        { name:'Meetup', icon:'fa-users', content:'<a href="http://www.meetup.com/members/82301962/" target="_blank">Jan Hartung</a>' },
+                        { name:'Lanyrd', icon:'fa-suitcase', content:'<a href="http://lanyrd.com/profile/jan-hartung/" target="_blank">Jan Hartung</a>' },
+                        { name:'Confide', icon:'fa-shield', content:'<a href="https://getconfide.com/" target="_blank">Jan Hartung</a>' },
+                        { name:'Yo', icon:'fa-hand-o-right', content:'<a href="http://www.justyo.co/" target="_blank">EGGA</a>' },
+                    ];
+                }])
+                .controller('FooterController', ['$scope', function($scope) {
+                    $scope.sites = [
+                        { name:'Bootstrap', url:'http://getbootstrap.com/' },
+                        { name:'Material Design for Bootstrap', url:'http://fezvrasta.github.io/bootstrap-material-design/' },
+                        { name:'AngularJS', url:'https://angularjs.org/' },
+                        { name:'Font Awesome', url:'http://fortawesome.github.io/Font-Awesome/' },
+                        { name:'', url:'' },
+                        { name:'', url:'' },
+                    ];
+                }]);
+        </script>
+        
         <nav class="navbar navbar-material-cyan navbar-fixed-top" role="navigation">
             <div class="navbar-header">
                 <a class="navbar-brand" ng-click="page = 'index'" style="background: url(img/logo.png) no-repeat; background-position:5px 5px; padding-left: 60px;">Egga</a>
@@ -49,30 +85,6 @@
                 <h2>Contact</h2>
                 <div class="list-group" ng-controller="ExampleController">
                     
-                     <script>
-                        angular.module('initExample', ['ngSanitize'])
-                          .controller('ExampleController', ['$scope', function($scope) {
-                            $scope.sites = [
-                              { name:'Mail', icon:'fa-envelope', content:'<a href="mailto:mail@egga.de">mail@egga.de</a>' },
-                              { name:'Phone', icon:'fa-phone', content:'+49 163 234 23 05' },
-                              { name:'Google+', icon:'fa-google-plus', content:'<a href="https://plus.google.com/+JanHartung" target="_blank">+JanHartung</a> Best option to contact me: Start a Hangout.' },
-                              { name:'Threema', icon:'fa-lock', content:'<a href="https://threema.ch/en" target="_blank">KNFPDCEN</a>' },
-                              { name:'Telegram', icon:'fa-paper-plane', content:'<a href="https://telegram.org/" target="_blank">Egga</a>' },
-                              { name:'Twitter', icon:'fa-twitter', content:'<a href="https://twitter.com/egga_de" target="_blank">@egga_de</a>' },
-                              { name:'Skype', icon:'fa-skype', content:'<a href="skype:egga_de?userinfo" target="_blank">egga_de</a> Please contact me in advance, so I can turn it on' },
-                              { name:'LinkedIn', icon:'fa-linkedin', content:'<a href="https://www.linkedin.com/in/janhartung" target="_blank">Jan Hartung</a>' },
-                              { name:'Xing', icon:'fa-xing', content:'<a href="https://www.xing.com/profile/Jan_Hartung9" target="_blank">Jan Hartung</a>' },
-                              { name:'Github', icon:'fa-github', content:'<a href="https://github.com/Egga" target="_blank">Egga</a>' },
-                              { name:'Bitbucket', icon:'fa-bitbucket', content:'<a href="https://bitbucket.org/Egga" target="_blank">Egga</a>' },
-                              { name:'Trello', icon:'fa-trello', content:'<a href="https://trello.com/egga" target="_blank">egga</a>' },
-                              { name:'Meetup', icon:'fa-users', content:'<a href="http://www.meetup.com/members/82301962/" target="_blank">Jan Hartung</a>' },
-                              { name:'Lanyrd', icon:'fa-suitcase', content:'<a href="http://lanyrd.com/profile/jan-hartung/" target="_blank">Jan Hartung</a>' },
-                              { name:'Confide', icon:'fa-shield', content:'<a href="https://getconfide.com/" target="_blank">Jan Hartung</a>' },
-                              { name:'Yo', icon:'fa-hand-o-right', content:'<a href="http://www.justyo.co/" target="_blank">EGGA</a>' },
-                            ];
-                          }]);
-                    </script>
-                
                     <div class="list-group-item well" ng-repeat="site in sites">
                         <div class="row-action-primary">
                             <i class="icon fa {{ site.icon }} fa-li"></i>
@@ -85,7 +97,12 @@
                 </div>
             </div>
         </div>
-    
-
+        
+        <nav id="footer" class="navbar navbar-material-cyan text-center" ng-controller="FooterController">
+            <p>This site was made using awesome open source projects!</p>
+            <span class="label label-inverse" ng-repeat="site in sites">
+                <a href="{{ site.url }}" target="_blank">{{ site.name }}</a>
+            </span>
+        </nav>
     </body>
 </html>
