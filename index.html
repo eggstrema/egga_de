@@ -96,11 +96,14 @@
             </div>
         </div>
         
-        <nav id="footer" class="navbar navbar-material-cyan text-center" ng-controller="FooterController">
+        <div class="container-fluid navbar-material-cyan text-center" ng-controller="FooterController">
             <p>This site was made using awesome open source projects!</p>
-            <span class="label label-inverse" ng-repeat="site in sites">
-                <a href="{{ site.url }}" target="_blank">{{ site.name }}</a>
-            </span>
-        </nav>
+            
+            <div class="row" ng-repeat="site in sites">
+                <span class="label label-inverse">
+                    <a href="{{ site.url }}" target="_blank">{{ site.name }}</a>
+                </span>
+            </div>
+        </div>
     </body>
 </html>
