@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Mail",
+    "icon": "fa-envelope",
+    "content": "<a href=\"mailto:mail@egga.de\">mail@egga.de</a>"
+  },
+  {
+    "name": "Phone",
+    "icon": "fa-phone",
+    "content": "+49 163 234 23 05"
+  },
+  {
+    "name": "Google+",
+    "icon": "fa-google-plus",
+    "content": "<a href=\"https://plus.google.com/+JanHartung\" target=\"_blank\">+JanHartung</a>"
+  },
+  {
+    "name": "Threema",
+    "icon": "fa-lock",
+    "content": "<a href=\"https://threema.ch/en\" target=\"_blank\">KNFPDCEN</a>"
+  },
+  {
+    "name": "Telegram",
+    "icon": "fa-paper-plane",
+    "content": "<a href=\"https://telegram.org/\" target=\"_blank\">Egga</a>"
+  },
+  {
+    "name": "Twitter",
+    "icon": "fa-twitter",
+    "content": "<a href=\"https://twitter.com/egga_de\" target=\"_blank\">@egga_de</a>"
+  },
+  {
+    "name": "Facebook",
+    "icon": "fa-facebook",
+    "content": "<a href=\"https://www.facebook.com/profile.php?id=100004507459390\" target=\"_blank\">Jan Hartung</a>"
+  },
+  {
+    "name": "Skype",
+    "icon": "fa-skype",
+    "content": "<a href=\"skype:egga_de?userinfo\" target=\"_blank\">egga_de</a>"
+  },
+  {
+    "name": "LinkedIn",
+    "icon": "fa-linkedin",
+    "content": "<a href=\"https://www.linkedin.com/in/janhartung\" target=\"_blank\">Jan Hartung</a>"
+  },
+  {
+    "name": "Xing",
+    "icon": "fa-xing",
+    "content": "<a href=\"https://www.xing.com/profile/Jan_Hartung9\" target=\"_blank\">Jan Hartung</a>"
+  },
+  {
+    "name": "Github",
+    "icon": "fa-github",
+    "content": "<a href=\"https://github.com/Egga\" target=\"_blank\">Egga</a>"
+  },
+  {
+    "name": "Bitbucket",
+    "icon": "fa-bitbucket",
+    "content": "<a href=\"https://bitbucket.org/Egga\" target=\"_blank\">Egga</a>"
+  },
+  {
+    "name": "Trello",
+    "icon": "fa-trello",
+    "content": "<a href=\"https://trello.com/egga\" target=\"_blank\">egga</a>"
+  },
+  {
+    "name": "Meetup",
+    "icon": "fa-users",
+    "content": "<a href=\"http://www.meetup.com/members/82301962/\" target=\"_blank\">Jan Hartung</a>"
+  },
+  {
+    "name": "Lanyrd",
+    "icon": "fa-suitcase",
+    "content": "<a href=\"http://lanyrd.com/profile/jan-hartung/\" target=\"_blank\">Jan Hartung</a>"
+  },
+  {
+    "name": "Confide",
+    "icon": "fa-shield",
+    "content": "<a href=\"https://getconfide.com/\" target=\"_blank\">Jan Hartung</a>"
+  },
+  {
+    "name": "Yo",
+    "icon": "fa-hand-o-right",
+    "content": "<a href=\"http://www.justyo.co/\" target=\"_blank\">EGGA</a>"
+  }
+]
