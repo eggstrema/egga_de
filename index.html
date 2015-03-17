@@ -52,7 +52,7 @@
                         <div class="row-content">
                             <h4 class="list-group-item-heading">{{ site.name }}</h4>
 
-                            <a ng-href="site.url" ng-if="site.url">
+                            <a ng-href="{{site.url}}" target="_blank" ng-if="site.url">
                                 {{site.label}}
                             </a>
                             <span ng-bind="site.label" ng-if="!site.url"/>
