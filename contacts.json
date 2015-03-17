@@ -2,86 +2,102 @@
   {
     "name": "Mail",
     "icon": "fa-envelope",
-    "content": "<a href=\"mailto:mail@egga.de\">mail@egga.de</a>"
+    "url": "mailto:mail@egga.de",
+    "label": "mail@egga.de"
   },
   {
     "name": "Phone",
     "icon": "fa-phone",
-    "content": "+49 163 234 23 05"
+    "label": "+49 163 234 23 05"
   },
   {
     "name": "Google+",
     "icon": "fa-google-plus",
-    "content": "<a href=\"https://plus.google.com/+JanHartung\" target=\"_blank\">+JanHartung</a>"
+    "url": "https://plus.google.com/+JanHartung",
+    "label": "+JanHartung"
   },
   {
     "name": "Threema",
     "icon": "fa-lock",
-    "content": "<a href=\"https://threema.ch/en\" target=\"_blank\">KNFPDCEN</a>"
+    "url": "https://threema.ch/en",
+    "label": "KNFPDCEN"
   },
   {
     "name": "Telegram",
     "icon": "fa-paper-plane",
-    "content": "<a href=\"https://telegram.org/\" target=\"_blank\">Egga</a>"
+    "url": "https://telegram.org/",
+    "label": "Egga"
   },
   {
     "name": "Twitter",
     "icon": "fa-twitter",
-    "content": "<a href=\"https://twitter.com/egga_de\" target=\"_blank\">@egga_de</a>"
+    "url": "https://twitter.com/egga_de",
+    "label": "@egga_de"
   },
   {
     "name": "Facebook",
     "icon": "fa-facebook",
-    "content": "<a href=\"https://www.facebook.com/profile.php?id=100004507459390\" target=\"_blank\">Jan Hartung</a>"
+    "url": "https://www.facebook.com/profile.php?id=100004507459390",
+    "label": "Jan Hartung"
   },
   {
     "name": "Skype",
     "icon": "fa-skype",
-    "content": "<a href=\"skype:egga_de?userinfo\" target=\"_blank\">egga_de</a>"
+    "url": "skype:egga_de?userinfo",
+    "label": "egga_de"
   },
   {
     "name": "LinkedIn",
     "icon": "fa-linkedin",
-    "content": "<a href=\"https://www.linkedin.com/in/janhartung\" target=\"_blank\">Jan Hartung</a>"
+    "url": "https://www.linkedin.com/in/janhartung",
+    "label": "Jan Hartung"
   },
   {
     "name": "Xing",
     "icon": "fa-xing",
-    "content": "<a href=\"https://www.xing.com/profile/Jan_Hartung9\" target=\"_blank\">Jan Hartung</a>"
+    "url": "https://www.xing.com/profile/Jan_Hartung9",
+    "label": "Jan Hartung"
   },
   {
     "name": "Github",
     "icon": "fa-github",
-    "content": "<a href=\"https://github.com/Egga\" target=\"_blank\">Egga</a>"
+    "url": "https://github.com/Egga",
+    "label": "Egga"
   },
   {
     "name": "Bitbucket",
     "icon": "fa-bitbucket",
-    "content": "<a href=\"https://bitbucket.org/Egga\" target=\"_blank\">Egga</a>"
+    "url": "https://bitbucket.org/Egga",
+    "label": "Egga"
   },
   {
     "name": "Trello",
     "icon": "fa-trello",
-    "content": "<a href=\"https://trello.com/egga\" target=\"_blank\">egga</a>"
+    "url": "https://trello.com/egga",
+    "label": "egga"
   },
   {
     "name": "Meetup",
     "icon": "fa-users",
-    "content": "<a href=\"http://www.meetup.com/members/82301962/\" target=\"_blank\">Jan Hartung</a>"
+    "url": "http://www.meetup.com/members/82301962/",
+    "label": "Jan Hartung"
   },
   {
     "name": "Lanyrd",
     "icon": "fa-suitcase",
-    "content": "<a href=\"http://lanyrd.com/profile/jan-hartung/\" target=\"_blank\">Jan Hartung</a>"
+    "url": "http://lanyrd.com/profile/jan-hartung/",
+    "label": "Jan Hartung"
   },
   {
     "name": "Confide",
     "icon": "fa-shield",
-    "content": "<a href=\"https://getconfide.com/\" target=\"_blank\">Jan Hartung</a>"
+    "url": "https://getconfide.com/",
+    "label": "Jan Hartung"
   },
   {
     "name": "Yo",
     "icon": "fa-hand-o-right",
-    "content": "<a href=\"http://www.justyo.co/\" target=\"_blank\">EGGA</a>"
+    "url": "http://www.justyo.co/",
+    "label": "EGGA"
   }
 ]
