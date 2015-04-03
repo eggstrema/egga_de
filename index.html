@@ -56,9 +56,6 @@
                                 {{site.label}}
                             </a>
                             <span ng-bind="site.label" ng-if="!site.url"/>
-
-
-
                         </div>
                     </div>
                 </div>
@@ -70,10 +67,7 @@
 
             <div class="row" >
                 <span class="label label-inverse" ng-repeat="site in sites">
-
                          {{site.label}}
-
-
                     <a href="{{ site.url }}" target="_blank">{{ site.name }}</a>
                 </span>
             </div>
