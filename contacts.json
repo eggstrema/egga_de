@@ -11,6 +11,11 @@
     "label": "+49 163 234 23 05"
   },
   {
+    "name": "WhatsApp",
+    "icon": "fa-whatsapp",
+    "label": "+49 163 234 23 05"
+  },
+  {
     "name": "Google+",
     "icon": "fa-google-plus",
     "url": "https://plus.google.com/+JanHartung",
@@ -71,6 +76,18 @@
     "label": "Egga"
   },
   {
+    "name": "sourceforge",
+    "icon": "fa-file-code-o",
+    "url": "http://sourceforge.net/u/egga/profile/",
+    "label": "egga"
+  },
+  {
+    "name": "stackoverflow",
+    "icon": "fa-stack-overflow",
+    "url": "http://stackoverflow.com/users/909055/jan-hartung",
+    "label": "Jan Hartung"
+  },
+  {
     "name": "Trello",
     "icon": "fa-trello",
     "url": "https://trello.com/egga",
@@ -87,6 +104,12 @@
     "icon": "fa-suitcase",
     "url": "http://lanyrd.com/profile/jan-hartung/",
     "label": "Jan Hartung"
+  },
+  {
+    "name": "Medium",
+    "icon": "fa-medium",
+    "url": "https://medium.com/@egga_de",
+    "label": "@egga_de"
   },
   {
     "name": "Confide",
