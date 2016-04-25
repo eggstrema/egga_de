@@ -1,4 +1,4 @@
-
+# IDEA
 
 Often times there is a connection drawn between programming and maths. I think that's not right at all.
 
