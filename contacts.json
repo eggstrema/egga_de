@@ -40,12 +40,6 @@
     "label": "@egga_de"
   },
   {
-    "name": "Facebook",
-    "icon": "fa-facebook",
-    "url": "https://www.facebook.com/profile.php?id=100004507459390",
-    "label": "Egga Hartung"
-  },
-  {
     "name": "Skype",
     "icon": "fa-skype",
     "url": "skype:egga_de?userinfo",
@@ -102,7 +96,7 @@
   {
     "name": "Lanyrd",
     "icon": "fa-suitcase",
-    "url": "http://lanyrd.com/profile/jan-hartung/",
+    "url": "http://lanyrd.com/profile/egga-hartung/",
     "label": "Egga Hartung"
   },
   {
