@@ -16,34 +16,10 @@
     "label": "+49 163 234 23 05"
   },
   {
-    "name": "Google+",
-    "icon": "fa-google-plus",
-    "url": "https://plus.google.com/+JanHartung",
-    "label": "Egga Hartung"
-  },
-  {
-    "name": "Threema",
-    "icon": "fa-lock",
-    "url": "https://threema.ch/en",
-    "label": "KNFPDCEN"
-  },
-  {
-    "name": "Telegram",
-    "icon": "fa-paper-plane",
-    "url": "https://telegram.org/",
-    "label": "Egga"
-  },
-  {
     "name": "Twitter",
     "icon": "fa-twitter",
     "url": "https://twitter.com/egga_de",
     "label": "@egga_de"
-  },
-  {
-    "name": "Skype",
-    "icon": "fa-skype",
-    "url": "skype:egga_de?userinfo",
-    "label": "egga_de"
   },
   {
     "name": "LinkedIn",
@@ -92,29 +68,5 @@
     "icon": "fa-users",
     "url": "http://www.meetup.com/members/82301962/",
     "label": "Egga Hartung"
-  },
-  {
-    "name": "Lanyrd",
-    "icon": "fa-suitcase",
-    "url": "http://lanyrd.com/profile/egga-hartung/",
-    "label": "Egga Hartung"
-  },
-  {
-    "name": "Medium",
-    "icon": "fa-medium",
-    "url": "https://medium.com/@egga_de",
-    "label": "@egga_de"
-  },
-  {
-    "name": "Confide",
-    "icon": "fa-shield",
-    "url": "https://getconfide.com/",
-    "label": "Egga Hartung"
-  },
-  {
-    "name": "Yo",
-    "icon": "fa-hand-o-right",
-    "url": "http://www.justyo.co/",
-    "label": "EGGA"
   }
 ]
