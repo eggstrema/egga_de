@@ -6,11 +6,6 @@
     "label": "mail@egga.de"
   },
   {
-    "name": "Phone",
-    "icon": "fa-phone",
-    "label": "+49 163 234 23 05"
-  },
-  {
     "name": "WhatsApp",
     "icon": "fa-whatsapp",
     "label": "+49 163 234 23 05"
