@@ -6,17 +6,6 @@
     "label": "mail@egga.de"
   },
   {
-    "name": "WhatsApp",
-    "icon": "fa-whatsapp",
-    "label": "+49 163 234 23 05"
-  },
-  {
-    "name": "Twitter",
-    "icon": "fa-twitter",
-    "url": "https://twitter.com/egga_de",
-    "label": "@egga_de"
-  },
-  {
     "name": "LinkedIn",
     "icon": "fa-linkedin",
     "url": "http://www.linkedin.com/in/eggahartung",
@@ -26,42 +15,6 @@
     "name": "Xing",
     "icon": "fa-xing",
     "url": "https://www.xing.com/profile/Egga_Hartung",
-    "label": "Egga Hartung"
-  },
-  {
-    "name": "Github",
-    "icon": "fa-github",
-    "url": "https://github.com/Egga",
-    "label": "Egga"
-  },
-  {
-    "name": "Bitbucket",
-    "icon": "fa-bitbucket",
-    "url": "https://bitbucket.org/Egga",
-    "label": "Egga"
-  },
-  {
-    "name": "sourceforge",
-    "icon": "fa-file-code-o",
-    "url": "http://sourceforge.net/u/egga/profile/",
-    "label": "egga"
-  },
-  {
-    "name": "stackoverflow",
-    "icon": "fa-stack-overflow",
-    "url": "https://stackoverflow.com/users/909055/egga-hartung",
-    "label": "Egga Hartung"
-  },
-  {
-    "name": "Trello",
-    "icon": "fa-trello",
-    "url": "https://trello.com/egga",
-    "label": "egga"
-  },
-  {
-    "name": "Meetup",
-    "icon": "fa-users",
-    "url": "http://www.meetup.com/members/82301962/",
     "label": "Egga Hartung"
   }
 ]
